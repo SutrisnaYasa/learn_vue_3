@@ -1,6 +1,6 @@
 <template>
   <h1>{{ title }}</h1>
-  <Modal />
+  <Modal :header="header" :text="text" theme="sale"/>
 </template>
 
 <script>
@@ -12,7 +12,9 @@ export default {
   components: { Modal },
   data() {
     return {
-      title: 'My first Vue App Hehe :)' 
+      title: 'My first Vue App Hehe :)' ,
+      header: 'Sign up for the Giveaway!',
+      text: 'Grab your swag for half price'
     }
   },
   methods: {
